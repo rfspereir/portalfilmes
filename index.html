@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="Content-Language" content="pt-br">
+  <meta name="author" content="Rafael Felipe Silva Pereira">
+  <title>PORTAL DE FILMES</title>
+
+  <!-- Meu CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Font Awesome js -->
+  <script src="https://kit.fontawesome.com/15ec886c14.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header container">
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-transparent">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-film"></i> PORTALFILMES
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse justify-content-center navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-center">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Lançamentos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Em Destaque</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Avaliações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entrevistas & Making of</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novidades</a>
+          </li>
+        </ul>
+        <form class="form-inline justify-content-center">
+          <input class="searchBar form-control bg-transparent text-light mr-sm-2 mr-1" type="search"
+            placeholder="Pesquisar..." aria-label="Search">
+          <button class="btn btn-outline-secondary my-sm-0" type="submit">Ir</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Lançamentos -->
+    <div class="lancamentos container">
+      <section class="row">
+
+        <h1 class="mx-auto p-3">Lançamentos</h1>
+
+        <div class="carrossel p-3">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <!--Filme1-->
+              <div class="carousel-item active">
+                <section class="row mb-5">
+                  <div class="embed-responsive embed-responsive-16by9 col-lg-6 col-md-12">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Gm3o0bfGP3g" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+
+                  <article class="col-lg-6 col-md-12">
+                    <h3>VIÚVA NEGRA</h3>
+                    <span class="h6">Sinopse: </span>
+                    <p>No novo filme da Marvel Studios, "Viúva Negra", Natasha Romanoff (Scarlett Johansson) precisa
+                      confrontar partes de sua história quando surge uma conspiração perigosa ligada ao seu passado.
+                      Perseguida por uma força que não irá parar até derrotá-la, Natasha terá que lidar com sua antiga
+                      vida de espiã, e também reencontrar membros de sua família que deixou para trás antes de se tornar
+                      parte dos Vingadores.</p>
+
+                    <div class="mx-auto py-2">
+                      <span class="h6">Diretor: </span>
+                      <p>Cate Shortland</p> <span class="h6">Roteiro: </span>
+                      <p>Eric Pearson</p> <span class="h6">Estreia: </span>
+                      <p>08 de julho de 2021</p>
+                    </div>
+
+                    <h6>Elenco:</h6>
+                    <p>Scarlett Johansson, Florence Pugh, David Harbour, O. T. Fagbenle, William Hurt, Ray Winstone,
+                      Rachel Weisz.</p>
+
+                  </article>
+                </section>
+              </div>
+              <!--Filme2-->
+              <div class="carousel-item">
+                <section class="row mb-5">
+                  <div class="embed-responsive embed-responsive-16by9 col-lg-6 col-md-12">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/no0d18qvw0o" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+
+                  <article class="col-lg-6 col-md-12">
+                    <h3>KING'S MAN: A ORIGEM</h3>
+                    <span class="h6">Sinopse: </span>
+                    <p>Em King’s Man: A Origem, quando um grupo formado pelos piores tiranos e criminosos mais cruéis de
+                      todos os tempos planeja uma ameaça capaz de matar milhões de inocentes, um homem é obrigado a
+                      correr contra o tempo na tentativa de salvar o futuro da humanidade.</p>
+
+                    <div class="mx-auto py-2">
+                      <span class="h6">Diretor: </span>
+                      <p>Matthew Vaughn</p> <span class="h6">Roteiro: </span>
+                      <p>Matthew Vaughn, Jane Goldman, Karl Gajdusek.</p> <span class="h6">Estreia: </span>
+                      <p>19 de agosto de 2021</p>
+                    </div>
+
+                    <span class="h6">Elenco: </span>
+                    <p>Liam Neeson, Stanley Tucci, Constantine Gregory</p>
+
+                  </article>
+                </section>
+              </div>
+              <!--Filme3-->
+              <div class="carousel-item">
+                <section class="row mb-5">
+                  <div class="embed-responsive embed-responsive-16by9 col-lg-6 col-md-12">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/9_PTB062yec" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+
+                  <article class="col-lg-6 col-md-12">
+                    <h3>INFILTRADO</h3>
+                    <span class="h6">Sinopse: </span>
+                    <p>Em Wrath of Man, um misterioso homem (Jason Statham) trabalha para uma empresa de transporte de
+                      dinheiro e é responsável por transferir milhões de dólares diariamente. Um dia, quando tentam
+                      assaltar seu caminhão, o homem consegue se livrar do assalto utilizando habilidades
+                      impressionantes. Seus companheiros passam questionar de onde ele veio e suas motivações para estar
+                      ali.</p>
+
+                    <div class="mx-auto py-2">
+                      <span class="h6">Diretor: </span>
+                      <p>Guy Ritchie</p> <span class="h6">Roteiro: </span>
+                      <p>Guy Ritchie, Nicolas Boukhrief, Ivan Atkinson, Marn Davies</p> <span class="h6">Estreia:
+                      </span>
+                      <p>27 de maio de 2021</p>
+                    </div>
+
+                    <h6>Elenco:</h6>
+                    <p>Jason Statham, Scott Eastwood, Holt McCallany</p>
+
+                  </article>
+                </section>
+              </div>
+              <!--Filme4-->
+              <div class="carousel-item">
+                <section class="row mb-5">
+                  <div class="embed-responsive embed-responsive-16by9 col-lg-6 col-md-12">
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/_krGjingmEo" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+
+                  <article class="col-lg-6 col-md-12">
+                    <h3>O ESQUADRÃO SUICIDA 2</h3>
+                    <span class="h6">Sinopse: </span>
+                    <p>MPensado para ser uma espécie de leve reboot, a sequência de Esquadrão Suicida, da DC Comics,
+                      acompanha um novo time de vilões reunido por uma entidade governamental comandada por Amanda
+                      Waller (Viola Davis), com o objetivo de realizar um trabalho sujo que ninguém tem coragem de
+                      fazer. O filme de ação e fantasia é baseado nos quadrinhos criados por John Ostrander para DC a
+                      Comics.</p>
+
+                    <div class="mx-auto py-2">
+                      <span class="h6">Diretor: </span>
+                      <p>James Gunn</p> <span class="h6">Roteiro: </span>
+                      <p>James Gunn</p> <span class="h6">Estreia: </span>
+                      <p>30 de julho de 2021</p>
+                    </div>
+
+                    <h6>Elenco:</h6>
+                    <p>Margot Robbie, Idris Elba, John Cena</p>
+
+                  </article>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- Em destaque & Últimas avaliações -->
+    <div class="detaqueAvaliacoes container">
+      <!-- Em Destaque -  -->
+      <section class="destaques p-2 row">
+
+        <h2 class="col-lg-9 col-md-8 col-sm-6">Em Destaque</h2>
+
+        <div class="dropdown col-lg-3 col-md-4 col-sm-6">
+
+          <button class="text-dark btn btn-lg btn-outline-secondary dropdown-toggle" type="button"
+            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categoria: TODOS
+          </button>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Aventura</a>
+            <a class="dropdown-item" href="#">Romance</a>
+            <a class="dropdown-item" href="#">Comédia</a>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Em Destaque - Cartazes -->
+      <section class="cartazes row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+
+        <img src="/pictures/Destaque/Django.jfif" alt="" class="img-fluid">
+        <img src="/pictures/Destaque/Legado.jfif" alt="" class="img-fluid">
+        <img src="/pictures/Destaque/melodia.jpg" alt="" class="img-fluid">
+        <img src="/pictures/Destaque/split.jpg" alt="" class="img-fluid">
+
+      </section>
+
+      <!-- Carregar mais Filmes - Botão -->
+      <section class="carregarMaisFilmes  row">
+
+        <button type="button" class="btn btn-outline-secondary text-dark m-2 "> + Carregar mais filmes</button>
+
+      </section>
+
+      <!-- Últimas Avaliações - Título -->
+      <section class="ultAvaliacoesTit ml-0 p-2 row">
+
+        <h2>Últimas Avaliações</h2>
+
+      </section>
+
+      <!-- Últimas Avaliações - Cards -->
+      <section class="ultAvaliacoesCards row">
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-3 p-2">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="card-title">Jhon P.</h5>
+                  <p class="card-text overflow-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur esse
+                    aut repudiandae doloribus eligendi illo impedit, quis minima, ad totam cumque facilis nulla eum
+                    iusto eius, doloremque earum assumenda</p>
+                  <p class="card-text"><small class="text-muted">12/01/2021</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-3 p-2">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="card-title">Maria</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur esse
+                    aut repudiandae doloribus eligendi illo impedit, quis minima, ad totam cumque facilis nulla eum
+                    iusto eius, doloremque earum assumenda!</p>
+                  <p class="card-text"><small class="text-muted">20/02/2021</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-3 p-2">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h5 class="card-title">Mark</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur esse
+                    aut repudiandae doloribus eligendi illo impedit, quis minima, ad totam cumque facilis nulla eum
+                    iusto eius, doloremque earum assumenda</p>
+                  <p class="card-text"><small class="text-muted">25/04/2021</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Carregar mais Avaliações - Botão -->
+      <section class="carregarMaisAvaliacoes row">
+
+        <button type="button" class="btn btn-outline-secondary text-dark m-2"> + Carregar mais Avaliações</button>
+
+      </section>
+
+    </div>
+
+    <!-- Entrevista & Making Of -->
+    <div class="entrevistasMakingOf container">
+
+      <!-- Entrevista & Making Of - Título -->
+      <section class="entrevistasMakingOfTit ml-0 p-2 row">
+
+        <h2>Entrevistas & Making Of</h2>
+
+      </section>
+
+      <!-- Entrevista & Making Of - Conteúdo -->
+      <section class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mx-auto">
+
+        <div class="px-1 my-auto">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/2W7e2kWJg_8" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+          <p class="py-2"><b class="h4">Filme: </b> Tenet</p>
+          <p><b class="h6">Diretor: </b>Christopher Nolan</p>
+          <p><b class="h6">Roteiro: </b> Christopher Nolan <b class="h6">Estreia: </b>2020</p>
+        </div>
+
+        <div class="px-1 my-auto">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/XM9Pvfq1KhE" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+          <p class="py-2"><b class="h4">Filme: </b> Planeta dos Macacos: A Origem</p>
+          <p><b class="h6">Diretor: </b> Rupert Wyatt</p>
+          <p><b class="h6">Roteiro: </b> Amanda Silver Rick Jaffa<b class="h6">Estreia: </b>2011</p>
+        </div>
+
+        <div class="px-1 my-auto">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/SuHRyxgUs04" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+          <p class="py-2"><b class="h4">Filme: </b> Piratas do Caribe: A Vingança de Salazar</p>
+          <p><b class="h6">Diretor: </b> Joachim Rønning, Espen Sandberg.</p>
+          <p><b class="h6">Roteiro: </b> Jeff Nathanson <b class="h6">Estreia: </b>2017</p>
+
+        </div>
+
+      </section>
+
+      <!-- Carregar mais Filmes - Botão -->
+      <section class="carregarMaisFilmes row">
+
+        <button type="button" class="btn btn-outline-secondary text-dark m-2"> + Carregar mais filmes</button>
+
+      </section>
+
+    </div>
+
+    <!-- Novidades & Sobre & Editorial -->
+    <div class="novidadesSobreEditorial container">
+      <div class="row">
+
+        <!-- Novidades -->
+        <section class="novidades col-lg-8 col-md-12 p-3">
+
+          <!-- Novidades - Título -->
+          <div class="novidadesTit ml-0 row">
+
+            <h2>Novidades</h2>
+
+          </div>
+
+          <!-- Novidades - Conteúdo -->
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-6 p-2">
+                <img src="/pictures/novidades/nv0.jpg" class="card-img">
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="card-title">Oscar 2021</h5>
+                  <p class="card-text">O Oscar 2021 contará com nova dinâmica de entrega. A premiação será realizada em
+                    dois palcos principais: Dolby Theatre e Union Station. Também surgiram boatos de que haverá sedes em
+                    Paris e na Grã-Bretanha para receber os indicados que não podem viajar para os Estados Unidos.</p>
+                  <span class="badge badge-pill badge-secondary">OSCAR-2021</span> <span
+                    class="badge badge-pill badge-secondary">NOVIDADES</span> <span
+                    class="badge badge-pill badge-secondary">PREMIAÇÕES</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-6 p-2">
+                <img src="/pictures/novidades/nv1.jpg" class="card-img">
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="card-title">Matrix 4 com Keanu Reeves</h5>
+                  <p class="card-text">Ao confirmar a produção, a Warner anunciou também que Keanu Reeves retorna ao
+                    papel de Neo e Carrie-Anne Moss assume novamente o papel de Trinity. Laurence Fishburne, que fez o
+                    papel de Morpheus, não foi citado no novo longa. As novidades incluem Yahya Abdul-Mateen II, de
+                    Aquaman, Neil Patrick Harris, de How I Met Your Mother, e diversos atores de Sense8, série da
+                    Netflix criada pelas irmãs Wachowski.</p>
+                  <span class="badge badge-pill badge-secondary">MATRIX4</span> <span
+                    class="badge badge-pill badge-secondary">LANÇAMENTO</span> <span
+                    class="badge badge-pill badge-secondary">ELENCO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-6 p-2">
+                <img src="/pictures/novidades/nv2.jpg" class="card-img">
+              </div>
+              <div class="col-6">
+                <div class="card-body">
+                  <h5 class="card-title">Aqueles Que Me Desejam a Morte: trailer do filme com Angelina Jolie</h5>
+                  <p class="card-text">A Warner Bros. acaba de divulgar o <a href="https://www.youtube.com/watch?v=xWPeseCYPPI">trailer</a>  do novo filme de Angelina Jolie,
+                    Aqueles Que Me Desejam a Morte. No vídeo, conhecemos mais dos personagens da atriz e de Finn Little.
+                  </p>
+                  <span class="badge badge-pill badge-secondary">nacional</span> <span
+                    class="badge badge-pill badge-secondary">oscar</span> <span
+                    class="badge badge-pill badge-secondary">cannes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Sobre & Editorial & Redes Sociais -->
+        <section class="sobreEditorialRedes col-lg-4 col-md-12 p-3 pl-5">
+
+          <!-- Sobre - Título -->
+          <div class="sobreTit row">
+
+            <h2>Sobre</h2>
+
+          </div>
+
+          <!-- Sobre - Conteúdo -->
+          <div class="sobreConteudo row">
+            <p class="mr-4">O PORTALFILMES é um portal de filmes desenvolvido como um trabalho para a disciplina
+              Desenvolvimento de Interfaces WEB do curso de Engenharia de Computação na PUC-MG - Campus Coração
+              Eucarístico.</p>
+          </div>
+
+          <!-- Editorial - Título -->
+          <div class="editorialTit row">
+
+            <h2>Editorial</h2>
+
+          </div>
+
+          <!-- Editorial - Conteúdo -->
+          <div class="editorialConteudo row">
+
+            <p>
+              <i class="fas fa-user"></i>
+              <b class="h6">Redação: </b> Rafael Felipe Silva Pereira
+            </p>
+            <p>
+              <i class="fas fa-user"></i>
+              <b class="h6">Pesquisa: </b> Rafael Felipe Silva Pereira
+            </p>
+            <p>
+              <i class="fas fa-user"></i>
+              <b class="h6">Gerente Geral: </b> Rafael Felipe Silva Pereira
+            </p>
+
+          </div>
+
+          <!-- Redes Sociais - Título -->
+          <div class="redesSociaisTit row">
+
+            <h3>Redes sociais</h3>
+
+          </div>
+
+          <!-- Redes Sociais - Conteúdo -->
+          <div class="redesSociaisTit row">
+
+            <a href="#"><i class="h1 p-1 text-dark fab fa-linkedin"></i></a>
+            <a href="#"><i class="h1 p-1 text-dark fab fa-facebook-square"></i></a>
+            <a href="#"><i class="h1 p-1 text-dark fab fa-twitter-square"></i></a>
+            <a href="#"><i class="h1 p-1 text-dark fab fa-instagram"></i></a>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="rodape container">
+    <article class="row text-center mx-3">
+      <p class="my-auto col-lg-10 col-md-8 col-sm-7 mx-auto">Copyright 2021 - Disciplina de Desenvolvimento de
+        Interfaces Web - <b>ICEI PUC Minas</b>
+      </p>
+
+      <p class="mx-auto my-auto col-lg-2 col-md-4 col-sm-3">
+        <b><i class="fas fa-film"></i> PORTALFILMES</b>
+      </p>
+
+
+    </article>
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

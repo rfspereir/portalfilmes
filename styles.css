@@ -1,0 +1,88 @@
+body{
+    background-image: url(/pictures/Background/background.jpg);
+}
+
+
+/* Cabeçalho */
+
+header{
+    background-color: rgb(175, 49, 49);
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+header img{
+    width: 10%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.nav li a{
+    font-size: 0.92em;
+    color: white;
+}
+
+.nav li a:hover{
+    color: aliceblue;
+}
+
+/* Lançamentos */
+
+.lancamentos{
+    background-color: #eeeeee;
+}
+
+.carrossel article p{
+    display: inline;
+    justify-content: space-between;
+}
+
+.carousel-indicators li{
+    background-color: black;
+}
+
+/* Destaque & Avaliações */
+
+.detaqueAvaliacoes{
+    background-color: #ffffff;
+}
+
+.destaque .dropdown{
+    right: 0px;
+}
+
+.cartazes img{
+    padding: 5px;
+}
+
+/* Entrevistas & Making Of */
+.entrevistasMakingOf {
+    background-color: #e1e1e1;
+}
+
+/* Novidades & Sobre & Editorial */
+
+.novidadesSobreEditorial{
+    background-color: #ffffff;
+}
+
+.editorialConteudo img{
+    width: 10px;
+}
+
+/* Rodape */
+
+footer {
+    background-color: rgb(175, 49, 49);
+}
+
+footer p{
+    color: white;
+}
+
+footer img{
+    width: 100%;    
+}
