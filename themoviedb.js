@@ -3,67 +3,53 @@
 
 const api_key = "api_key=fb61640a6949cbe5abf035a7d4b7a269";
 const base_url= "https://api.themoviedb.org/3";
-const images_url= "https://image.tmdb.org/t/p/";
+const images_url= "https://image.tmdb.org/t/p/w500";
 const timeout= 2000;
 const api_url = base_url + "/discover/movie?language=pt-br,sort_by=popularity.desc&"+api_key;
+let xhr;
+//-------------------------------------------------------------------------------------------------------
 
-const main = document.getElementById(destaAvaliações)
+function carregaFilmes () {
+  xhr = new XMLHttpRequest ();
 
-getmovies(api_url);
-
-function getmovies(url){
-
-    fetch(url).then(res=>res.json).then(data=>{
-        showMovies(data.results);
-    })
-
+  xhr.open ('GET', base_url+ '/movie/popular' + '?language=pt-br,api_key=' + api_key, true);
+  xhr.onload = exibeFilmes;
+  xhr.send();
 }
 
-function showMovies(data){
+function pesquisaFilmes () {
+  xhr = new XMLHttpRequest ();
 
-    main.innerHTML = '';
+  query = document.getElementById('pesquisa').value;
 
-    data.forEach(movie =>{
+  xhr.open ('GET', base_url + '/search/movie' + '?language=pt-br,api_key=' + api_key + '&query=' + query, true);
+  xhr.onload = exibeFilmes;
+  xhr.send();
+}
 
-        const {title, poste_path, vote_average, overview)=movies }
 
-        const movieE1 = document.createElement('div');
-        movieE1.classList.add('movie');
-        movieE1.innerHTML =
-        
-    <div class="detaqueAvaliacoes container">
-      <!-- Em Destaque -  -->
-      <section class="destaques p-2 row">
+function exibeFilmes () {
+  
+  let data = JSON.parse (xhr.responseText);
+  let textoHTML = '';
 
-        <h2 class="col-lg-9 col-md-8 col-sm-6">Em Destaque</h2>
+  for (let i = 0; i < data.results.length; i++) {
+      let nomeFilme = data.results[i].title;
+      let sinopse = data.results[i].overview;
+      let imagem = images_url + data.results[i].poster_path;
 
-        <div class="dropdown col-lg-3 col-md-4 col-sm-6">
-
-          <button class="text-dark btn btn-lg btn-outline-secondary dropdown-toggle" type="button"
-            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Categoria: TODOS
-          </button>
-
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Aventura</a>
-            <a class="dropdown-item" href="#">Romance</a>
-            <a class="dropdown-item" href="#">Comédia</a>
+      textoHTML += `<div class="card col-md-4">
+          <img src="${imagem}" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">${nomeFilme}</h5>
+              <p class="card-text">${sinopse}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
+      </div>`
+  }
 
-        </div>
-
-      </section>
-
-      <!-- Em Destaque - Cartazes -->
-      <section class="cartazes row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
-
-        <img src="${images_url+poster_path}" alt="${title}" ></img>
-        <img src="/pictures/Destaque/Legado.jfif" alt="" class="img-fluid">
-        <img src="/pictures/Destaque/melodia.jpg" alt="" class="img-fluid">
-        <img src="/pictures/Destaque/split.jpg" alt="" class="img-fluid">
-
-      </section>";
-
-    main.appendChild(movieE1);
-    })
+  document.getElementById('tela').innerHTML = textoHTML;
 }
+
+//-------------------------------------------------------------------------------------------------------
+
